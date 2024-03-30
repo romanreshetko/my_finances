@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PortfolioShareStatistics"
+    android:orientation="vertical"
+    android:background="#160734">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/arrowBackFromStats"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+
+        <TextView
+            android:id="@+id/statsTicker"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:textAlignment="center"
+            android:text=""
+            android:textColor="#F8954E"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/price"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="Цена\n"/>
+
+            <TextView
+                android:id="@+id/pe"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="P/E\n"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/eps"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="EPS\n"/>
+
+            <TextView
+                android:id="@+id/evebitda"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="EV/EBITDA\n"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/lastdiv"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="Прошлый\nдивиденд\n"/>
+
+            <TextView
+                android:id="@+id/nextdiv"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="Ожидаемый\nдивиденд\n"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/divyield"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="Доходность\nдивиденда\n"/>
+
+            <TextView
+                android:id="@+id/divdate"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="Отсечка\nдивиденда\n"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/roe"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="ROE\n"/>
+
+            <TextView
+                android:id="@+id/beta"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="Beta\n"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/debtebitda"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="Чистый долг\nEBITDA\n"/>
+
+            <TextView
+                android:id="@+id/forecast"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="Прогноз\n"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/graphButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#00A020"
+        android:text="@string/graph" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF0000"
+        android:text="@string/delete" />
+
+</LinearLayout>

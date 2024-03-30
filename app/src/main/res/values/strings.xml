@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Finances</string>
+    <string name="sharesHeader">Акции</string>
+    <string name="search">search</string>
+    <string name="image_of_share">image_of_share</string>
+    <string name="enter_ticker">Введите тикер акции</string>
+    <string name="tickerHint">Ticker</string>
+    <string name="addTicker">Добавить</string>
+    <string name="apiKey">B2U6F7WRBINAIUX8</string>
+    <string name="delete">Удалить</string>
+    <string name="chosen">chosen</string>
+    <string name="portfolio">portfolio</string>
+    <string name="portfolioHeader">Портфель</string>
+    <string name="transaction_type">Тип сделки</string>
+    <string name="buy">Покупка</string>
+    <string name="sell">Продажа</string>
+    <string name="transaction_instrument">Инструмент</string>
+    <string name="transactionPrice">Цена</string>
+    <string name="_12_34">12.34</string>
+    <string name="volume">Объём</string>
+    <string name="_1">1</string>
+    <string name="trans_price">Цена\nпокупки\n\n</string>
+    <string name="current_price">Текущая\nцена\n\n</string>
+    <string name="earned_divs">Полученные\nдивиденды\n\n</string>
+    <string name="total_return">Общий\nдоход\n\n</string>
+    <string name="cash_flow">Оборот по\nинструменту\n\n</string>
+    <string name="trans_number">Количество\nсделок\n\n</string>
+    <string name="statistics">Статистика</string>
+    <string name="port_return">Доходность портфеля</string>
+    <string name="perCent">%</string>
+    <string name="indreturn">Доходность индекса</string>
+    <string name="portStructure">Структура портфеля</string>
+    <string name="countries">Страны</string>
+    <string name="sector">Сектор</string>
+    <string name="shares">Акции</string>
+    <string name="graph">График</string>
+</resources>

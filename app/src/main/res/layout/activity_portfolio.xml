@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#160734"
+    android:orientation="vertical"
+    tools:context=".PortfolioActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:id="@+id/imageStats"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/search"
+            android:src="@drawable/baseline_pie_chart_outline_24" />
+
+
+        <TextView
+            android:id="@+id/portfolioHeader"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:textAlignment="center"
+            android:text="@string/portfolioHeader"
+            android:textColor="#F8954E"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageAdd"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/search"
+            android:src="@drawable/baseline_add_24" />
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/portfolioList"
+        android:layout_width="match_parent"
+        android:layout_height="620dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+
+
+        <ImageView
+            android:id="@+id/starP"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/chosen"
+            android:src="@android:drawable/btn_star_big_off" />
+
+        <ImageView
+            android:id="@+id/portfolioP"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="270dp"
+            android:contentDescription="@string/portfolio"
+            android:src="@drawable/baseline_business_center_24" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

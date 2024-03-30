@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#160734"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+
+
+        <TextView
+            android:id="@+id/sharesHeader"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:textAlignment="center"
+            android:text="@string/sharesHeader"
+            android:textColor="#F8954E"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageSearch"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:contentDescription="@string/search" />
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sharesList"
+        android:layout_width="match_parent"
+        android:layout_height="620dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+
+
+        <ImageView
+            android:id="@+id/starM"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/chosen"
+            android:src="@android:drawable/btn_star_big_off" />
+
+        <ImageView
+            android:id="@+id/portfolioM"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="270dp"
+            android:contentDescription="@string/portfolio"
+            android:src="@drawable/baseline_business_center_24" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
